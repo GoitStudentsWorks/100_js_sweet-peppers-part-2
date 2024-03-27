@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/100_js_sweet-peppers-part-2/assets/favicon-4ca03e83.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Experienced Full Stack developer with diverse expertise. Crafting modern, client-centric websites creatively and efficiently. Delivering projects promptly, prioritizing your needs.">
+    <title>Portfolio</title>
+    
+    <script type="module" crossorigin src="/100_js_sweet-peppers-part-2/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/100_js_sweet-peppers-part-2/assets/vendor-fca32f99.js">
+    <link rel="stylesheet" href="/100_js_sweet-peppers-part-2/assets/vendor-8255b786.css">
+    <link rel="stylesheet" href="/100_js_sweet-peppers-part-2/assets/index-e30b23c0.css">
+  </head>
+
+  <body>
+    <header class="header" aria-label="navigation section">
+  <div class="header-container container">
+    <div class="header-logo">
+      <a href="./index.html" class="header-logo-link">
+        <picture>
+          <source srcset="data:image/webp;base64,UklGRvIDAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSLIAAAABcBRJktw0hGXggbJQBsIykRjIDGQGgjAQGsJC0H333xExAThspWMdH16jL4aLfRhfG35F5vhq+pnUjK9v0iGLUSDtgHGUSNtJHEVG2mpGmc2Gj0LzikoIwEepDoSWATaK/RQ1pVfThRpWNXX8e7mqqVQTXzW/oqaYGsOgJQDX4gCohACQlfgKrY4WmylUMG3BqIGGfaOCMBxN7fvahJPOdzHjQo/3DI6LrfRRn1bZFcNhVlA4IBoDAACQEACdASpQAFAAPp1KnUumLaomIpgM2LATiWUAy6gODZ4D9ZGSsLuo7ADek9w++4bo09gnmfzXexhl5tqmIqNf0tQc1KlSNVAXSWeUZQqSozCCatXgKU43RLsg09yb17lXDvvo724bDA4T678TfSCq8xsrNUFKfnVFGdOib/vCB3TuHoOw/jTmcCIGxgAA/vjACFiBWbPP2wOvXB/fcixTp06r+SndristyU5B2CDYcu5IGPF7+n+LWoX+lcSadjP1iWCSCjT+/NJDUPpK6oWCgAFjPxwc9j26qQPANnF3JADJUtXI1UMLThcga+HLgMr0Y9OdrdjmEYhszhzehpb8gSVXdxgAJcj1vtjZEXffPjhBOEXrSxxsuwIPT01QH5u03VtdsavvjJ+EM5Df6f67qfdtRbTYZHCyBpq+sckbflbffThKdaBVf5AF8Ooj34HoOLUpX6UWeJyJnLwNs2vMrCIer27nQZxOG+zxxuU7RY8pNOm5HcAoVHOx3iMVEd/RH+LF3eMd85l6lzTK/SAGQlpslYpdRUurPQw08ZVPU5OY7lKIcYTn+IMreJK6S3jBL9h0PDJ97zeN7jQw+aSJUNvnMEQ+FuJ6K00cFOU/bb25YS9KDQGH3KW1nAPrrR72Elx8y4F8E47/DupX7qK2Et8jp1fuzdozZFn1rv9+AbzCTKXGVxgzW3W9Upx/IZZS21PbD8DzgXQHHElhiXcuO1EFqr6tLtM7wzTS9ekSANeW46OJFv6ucjyiCQDTVYKGN8jXYmftZI22gTiDNLdi3hLIcwyT3rFZf9kG6Xz2jZnDJD6s8yFlhDulF+2l+GYD239MfbtQiPPidkAL1dvRjHIldQwhOcIwZOefegWgmghNdgRw7oMb9drJrV5Vs8Ml6p5XJMwnI//qV2HjdJ7hX3M53AKeNCIgk3YQuL8/4ymM5goS+LuLH58UPg/K25Q+/NbxHQEHmdhhMzmdA8nJmEjaDuGZ/G32ToLOS+eZQK+9Rf7yhVvQddYO32GTpIt0V2gfgA1zQAcwr5EhlzzJZN/domQOqwAAAA== , data:image/webp;base64,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 2x" />
+          <img
+            src="data:image/webp;base64,UklGRvIDAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSLIAAAABcBRJktw0hGXggbJQBsIykRjIDGQGgjAQGsJC0H333xExAThspWMdH16jL4aLfRhfG35F5vhq+pnUjK9v0iGLUSDtgHGUSNtJHEVG2mpGmc2Gj0LzikoIwEepDoSWATaK/RQ1pVfThRpWNXX8e7mqqVQTXzW/oqaYGsOgJQDX4gCohACQlfgKrY4WmylUMG3BqIGGfaOCMBxN7fvahJPOdzHjQo/3DI6LrfRRn1bZFcNhVlA4IBoDAACQEACdASpQAFAAPp1KnUumLaomIpgM2LATiWUAy6gODZ4D9ZGSsLuo7ADek9w++4bo09gnmfzXexhl5tqmIqNf0tQc1KlSNVAXSWeUZQqSozCCatXgKU43RLsg09yb17lXDvvo724bDA4T678TfSCq8xsrNUFKfnVFGdOib/vCB3TuHoOw/jTmcCIGxgAA/vjACFiBWbPP2wOvXB/fcixTp06r+SndristyU5B2CDYcu5IGPF7+n+LWoX+lcSadjP1iWCSCjT+/NJDUPpK6oWCgAFjPxwc9j26qQPANnF3JADJUtXI1UMLThcga+HLgMr0Y9OdrdjmEYhszhzehpb8gSVXdxgAJcj1vtjZEXffPjhBOEXrSxxsuwIPT01QH5u03VtdsavvjJ+EM5Df6f67qfdtRbTYZHCyBpq+sckbflbffThKdaBVf5AF8Ooj34HoOLUpX6UWeJyJnLwNs2vMrCIer27nQZxOG+zxxuU7RY8pNOm5HcAoVHOx3iMVEd/RH+LF3eMd85l6lzTK/SAGQlpslYpdRUurPQw08ZVPU5OY7lKIcYTn+IMreJK6S3jBL9h0PDJ97zeN7jQw+aSJUNvnMEQ+FuJ6K00cFOU/bb25YS9KDQGH3KW1nAPrrR72Elx8y4F8E47/DupX7qK2Et8jp1fuzdozZFn1rv9+AbzCTKXGVxgzW3W9Upx/IZZS21PbD8DzgXQHHElhiXcuO1EFqr6tLtM7wzTS9ekSANeW46OJFv6ucjyiCQDTVYKGN8jXYmftZI22gTiDNLdi3hLIcwyT3rFZf9kG6Xz2jZnDJD6s8yFlhDulF+2l+GYD239MfbtQiPPidkAL1dvRjHIldQwhOcIwZOefegWgmghNdgRw7oMb9drJrV5Vs8Ml6p5XJMwnI//qV2HjdJ7hX3M53AKeNCIgk3YQuL8/4ymM5goS+LuLH58UPg/K25Q+/NbxHQEHmdhhMzmdA8nJmEjaDuGZ/G32ToLOS+eZQK+9Rf7yhVvQddYO32GTpIt0V2gfgA1zQAcwr5EhlzzJZN/domQOqwAAAA=="
+            alt="lloyd jefferson photo"
+            width="80"
+            height="80"
+          />
+        </picture>
+        <p class="header-logo-text header-text">jefferson*</p>
+      </a>
+    </div>
+    <div class="header-menu-container menu-container">
+      <div class="header-list-container">
+        <button class="header-menu" type="button" data-menu-open-close>
+          Menu
+        </button>
+        <ul
+          class="header-menu-list header-text"
+          id="header-menu-list"
+          aria-label="open menu button"
+          data-menu
+        >
+          <li class="header-menu-item header-text" aria-label="section link">
+            <a href="#about-me">About me</a>
+          </li>
+          <li class="header-menu-item header-text" aria-label="section link">
+            <a href="#benefits">Benefits</a>
+          </li>
+          <li class="header-menu-item header-text" aria-label="section link">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="header-menu-item header-text"><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <a
+        class="header-order-btn"
+        href="#footer"
+        role="button"
+        aria-label="order the project button"
+        >Order the project</a
+      >
+    </div>
+
+    <button
+      class="header-btn button-reset header-menu-link-btn"
+      id="open-menu"
+      type="button"
+      aria-label="open menu"
+      data-menu-open-modal
+    >
+      <svg class="header-menu-svg" width="28" height="28">
+        <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-menu-open"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+
+    <main aria-label="Lloyd Jefferson portfolio">
+      <section class="hero-section" aria-label="hero section">
+  <div class="hero-container container">
+    <h1 class="hero-title">
+      Hello. <br />
+      I’m fullstack developer Lloyd Jefferson.
+    </h1>
+
+    <div class="hero-position-nav">
+      <button
+        class="button-hero-anime"
+        type="button"
+        aria-label="shift main color"
+      >
+        <span class="hero-button hero-button-def">R</span
+        ><span class="hero-button">G</span><span class="hero-button">B</span>
+      </button>
+      <ul class="soc-networks" aria-label="social media list">
+        <li aria-label="instagram">
+          <a
+            class="soc-networks-items instagram-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            >IG</a
+          >
+        </li>
+        <li aria-label="Facebook">
+          <a
+            class="soc-networks-items facebook-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            >FB</a
+          >
+        </li>
+        <li aria-label="Youtube">
+          <a
+            class="soc-networks-items youtube-link"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            >YT</a
+          >
+        </li>
+        <li aria-label="Github">
+          <a
+            class="soc-networks-items git-hub"
+            href="https://github.com/AWoLf98/sweet-peppers-part-2"
+            target="_blank"
+            >GH</a
+          >
+        </li>
+        <li aria-label="email">
+          <a
+            class="soc-networks-items email-link"
+            href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section id="about-me" aria-label="about me section">
+  <div class="container">
+    <h1 style="display: none" aria-label="about me title">About Me</h1>
+    <div class="about-me-container">
+      <div class="about-me-first-section-container">
+        <div class="about-first-section-text-container">
+          <p class="about-first-section-text" aria-label="short info about me">
+            I work with people all over the world to create impressive and
+            <span class="about-first-section-text-sekond-color"
+              >functional</span
+            >
+            <span class="about-first-section-text-third-color">websites</span>
+            that reflect each client's unique personality.
+          </p>
+        </div>
+        <img
+          class="about-first-section-image"
+          srcset="/100_js_sweet-peppers-part-2/assets/image-597c8918.webp 680w, /100_js_sweet-peppers-part-2/assets/image@2x-3ca09f40.webp 1360w, /100_js_sweet-peppers-part-2/assets/image-c44339dc.webp 704w, /100_js_sweet-peppers-part-2/assets/image@2x-f603e59e.webp 1408w, /100_js_sweet-peppers-part-2/assets/image-dc53adf5.webp 343w, /100_js_sweet-peppers-part-2/assets/image@2x-7dc7fb39.webp 686w"
+          sizes="(min-width: 1440px) 680px, (min-width: 768px) 704px, (max-width: 767px) 343px"
+          src="/100_js_sweet-peppers-part-2/assets/image-dc53adf5.webp"
+          alt="Lloyd Jefferson with laptop"
+        />
+      </div>
+
+      <div class="about-accordion-section">
+        <ul
+          class="accordion-container about-accordion-container"
+          aria-label="full information about me"
+        >
+          <li class="ac accardeon-item" aria-label="who i am">
+            <div class="ac-trigger about-ac-trigger">
+              <h2 class="accardeon-heading">About me</h2>
+              <div
+                class="about-button-icon-cover"
+                aria-label="show more button"
+                role="button"
+                tabindex="0"
+              >
+                <svg class="two-about-button-icon two-about-button-icon-rotate">
+                  <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="ac-panel accardeon-gap">
+              <p
+                class="ac-text about-ac-text about-ac-text-first about-text-first-el"
+              >
+                I am Lloyd Jefferson, a talented programmer with extensive
+                expertise in software development. I have an understanding of
+                different programming languages ​​and technologies, always ready
+                to improve my skills. I always follow the latest trends and look
+                for unconventional, creative solutions to problems. I have a
+                high level of analytical skills and am able to effectively solve
+                even the most difficult tasks encountered on the way.
+              </p>
+              <p class="ac-text about-ac-text about-ac-text-first">
+                Able to work both independently and in a team. I can effectively
+                cooperate with colleagues, exchanging ideas and finding optimal
+                solutions. Professional maturity allows you to calmly cope with
+                challenges and stressful situations, while maintaining a high
+                quality of work. I am always looking for opportunities for
+                self-improvement. I actively study new technologies and
+                practices to stay abreast of the latest innovations. I have a
+                strong understanding of various programming languages,
+                frameworks and architectural concepts that allow me to create
+                efficient and scalable software.
+              </p>
+            </div>
+          </li>
+
+          <li class="ac accardeon-item" aria-label="my role">
+            <div class="ac-trigger about-ac-trigger">
+              <h2 class="accardeon-heading">ROLE</h2>
+              <div
+                class="about-button-icon-cover"
+                aria-label="show more button"
+                role="button"
+                tabindex="0"
+              >
+                <svg class="two-about-button-icon">
+                  <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="ac-panel accardeon-gap-second">
+              <p class="ac-text about-ac-text about-text-first-el">
+                Frontend development
+              </p>
+              <p class="ac-text about-ac-text">HeadlessCMS,Wordpress</p>
+              <p class="ac-text about-ac-text">Blender(enjoy)</p>
+            </div>
+          </li>
+
+          <li class="ac accardeon-item" aria-label="my education">
+            <div class="ac-trigger about-ac-trigger">
+              <h2 class="accardeon-heading">EDUCATION</h2>
+              <div
+                class="about-button-icon-cover"
+                aria-label="show more button"
+                role="button"
+                tabindex="0"
+              >
+                <svg class="two-about-button-icon">
+                  <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="ac-panel accardeon-gap-third">
+              <p
+                class="ac-text about-ac-text about-ac-text-third about-text-first-el"
+              >
+                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+                York
+              </p>
+              <p class="ac-text about-ac-text about-ac-text-third">
+                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+                School, New York
+              </p>
+              <p class="ac-text about-ac-text about-ac-text-third">
+                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="about-me-swiper-container">
+        <div class="about-me-slider swiper-container">
+          <ul
+            class="about-me-slider-container swiper-wrapper"
+            
+            aria-label="my skills"
+          >
+            <li class="about-me-slider-item swiper-slide" tabindex="0">
+              HTML/CSS
+            </li>
+            <li class="about-me-slider-item swiper-slide" tabindex="0">
+              JavaScript
+            </li>
+            <li class="about-me-slider-item swiper-slide" tabindex="0">
+              React
+            </li>
+            <li class="about-me-slider-item swiper-slide" tabindex="0">
+              Node. js
+            </li>
+            <li class="about-me-slider-item swiper-slide" tabindex="0">
+              React Native
+            </li>
+            <li class="about-me-slider-item swiper-slide" tabindex="0">
+              Soft skills
+            </li>
+            <li class="about-me-slider-item swiper-slide" tabindex="0">
+              HTML/CSS
+            </li>
+            <li class="about-me-slider-item swiper-slide" tabindex="0">
+              JavaScript
+            </li>
+            <li class="about-me-slider-item swiper-slide" tabindex="0">
+              React
+            </li>
+            <li class="about-me-slider-item swiper-slide" tabindex="0">
+              Node. js
+            </li>
+            <li class="about-me-slider-item swiper-slide" tabindex="0">
+              React Native
+            </li>
+            <li class="about-me-slider-item swiper-slide" tabindex="0">
+              Soft skills
+            </li>
+          </ul>
+        </div>
+
+        <button class="next-about-me-btn" aria-label="next skill">
+          <svg class="about-me-next-icon-btn" width="28" height="28">
+            <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="benefits" id="benefits" aria-label="benefits section">
+  <div class="benefits-container container">
+    <h2 class="benefits-title">Benefits of working with me</h2>
+    <div class="benefits-additional-container">
+      <ul class="benefits-list" aria-label="benefits list">
+        <li class="benefits-item-container" aria-label="Expertise">
+          <div class="benefits-icon-container">
+            <svg width="24" height="24">
+              <use
+                class="benefits-icons"
+                href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-user"
+              ></use>
+            </svg>
+          </div>
+          <div class="benefits-description-container">
+            <h3 class="benefits-name">Expertise</h3>
+            <p class="benefits-description" aria-label="i'am expert">
+              As a highly experienced developer, I have deep knowledge of
+              programming and website development.
+            </p>
+          </div>
+        </li>
+        <li class="benefits-item-container" aria-label="Communication">
+          <div class="benefits-icon-container">
+            <svg width="24" height="24">
+              <use
+                class="benefits-icons"
+                href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-message-chat"
+              ></use>
+            </svg>
+          </div>
+          <div class="benefits-description-container">
+            <h3 class="benefits-name">Communication</h3>
+            <p class="benefits-description" aria-label="i'am communicabl">
+              Understanding your needs and wants is my priority and I am always
+              open to discussions and corrections.
+            </p>
+          </div>
+        </li>
+        <li class="benefits-item-container" aria-label="Art">
+          <div class="benefits-icon-container">
+            <svg width="24" height="24">
+              <use
+                class="benefits-icons"
+                href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-brush"
+              ></use>
+            </svg>
+          </div>
+          <div class="benefits-description-container">
+            <h3 class="benefits-name">Art</h3>
+            <p class="benefits-description" aria-label="i'am creative">
+              Thanks to my creative nature, I am ready to accept challenges and
+              help you bring your ideas to life.
+            </p>
+          </div>
+        </li>
+        <li class="benefits-item-container" aria-label="Urgent execution">
+          <div class="benefits-icon-container">
+            <svg width="24" height="24">
+              <use
+                class="benefits-icons"
+                href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-hourglass"
+              ></use>
+            </svg>
+          </div>
+          <div class="benefits-description-container">
+            <h3 class="benefits-name">Urgent execution</h3>
+            <p class="benefits-description" aria-label="i'am understandable">
+              I understand how important time is to you. Ready to work quickly
+              and efficiently, without reducing the quality of work.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <a
+        class="benefits-btn"
+        href="#footer"
+        role="button"
+        aria-label="order the project button"
+        >Order the project</a
+      >
+    </div>
+  </div>
+</section>
+
+      <section class="projects" id="projects" aria-label="my projects section">
+  <div class="container">
+    <h2 class="projects-section-title">Projects</h2>
+
+    <div class="projects-swiper swiper">
+      <ul class="projects-list swiper-wrapper" aria-label="my projects slider">
+        <li class="projects-list-item swiper-slide" aria-label="project">
+          <div class="project-information-wrapper">
+            <ul
+              class="project-tehnologies-list"
+              aria-label="technologies which i was used"
+            >
+              <li class="project-tehnologies-item">#html5</li>
+              <li class="project-tehnologies-item">#css</li>
+              <li class="project-tehnologies-item">#js</li>
+              <li class="project-tehnologies-item">#node.js</li>
+              <li class="project-tehnologies-item">#vite</li>
+              <li class="project-tehnologies-item">#git</li>
+            </ul>
+            <h3 class="project-title">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+
+            <a
+              class="project-link-btn"
+              target="_blank"
+              href="https://github.com/pro100-makari4/simply-chocolate"
+              tabindex="-1"
+              >See project</a
+            >
+          </div>
+
+          <div class="project-image-wrapper">
+            <picture>
+              <source
+                srcset="/100_js_sweet-peppers-part-2/assets/prj-1-11a3af07.webp 1x, /100_js_sweet-peppers-part-2/assets/prj-1@2x-5cb08f60.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source srcset="/100_js_sweet-peppers-part-2/assets/prj-1-1914e5d4.webp 1x, /100_js_sweet-peppers-part-2/assets/prj-1@2x-9a10af9a.webp 2x" />
+              <img
+                class="project-image"
+                src="/100_js_sweet-peppers-part-2/assets/prj-1-11a3af07.webp"
+                alt="Project preview"
+                width="614"
+                height="385"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+
+        <li class="projects-list-item swiper-slide" aria-label="project">
+          <div class="project-information-wrapper">
+            <ul
+              class="project-tehnologies-list"
+              aria-label="technologies which i was used"
+            >
+              <li class="project-tehnologies-item">#html5</li>
+              <li class="project-tehnologies-item">#css</li>
+              <li class="project-tehnologies-item">#js</li>
+              <li class="project-tehnologies-item">#node.js</li>
+              <li class="project-tehnologies-item">#vite</li>
+              <li class="project-tehnologies-item">#git</li>
+            </ul>
+            <h3 class="project-title">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+
+            <a
+              class="project-link-btn"
+              target="_blank"
+              href="https://github.com/AWoLf98/sweet-peppers"
+              tabindex="-1"
+              >See project</a
+            >
+          </div>
+
+          <div class="project-image-wrapper">
+            <picture>
+              <source
+                srcset="/100_js_sweet-peppers-part-2/assets/prj-2-0f0c45a8.webp 1x, /100_js_sweet-peppers-part-2/assets/prj-2@2x-85fd5baf.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source srcset="/100_js_sweet-peppers-part-2/assets/prj-2-29d59d02.webp 1x, /100_js_sweet-peppers-part-2/assets/prj-2@2x-f3569586.webp 2x" />
+              <img
+                class="project-image"
+                src="/100_js_sweet-peppers-part-2/assets/prj-2-29d59d02.webp"
+                alt="Project preview"
+                width="614"
+                height="385"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+
+        <li class="projects-list-item swiper-slide" aria-label="project">
+          <div class="project-information-wrapper">
+            <ul
+              class="project-tehnologies-list"
+              aria-label="technologies which i was used"
+            >
+              <li class="project-tehnologies-item">#html5</li>
+              <li class="project-tehnologies-item">#css</li>
+              <li class="project-tehnologies-item">#js</li>
+              <li class="project-tehnologies-item">#node.js</li>
+              <li class="project-tehnologies-item">#vite</li>
+              <li class="project-tehnologies-item">#git</li>
+            </ul>
+            <h3 class="project-title">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+
+            <a
+              class="project-link-btn"
+              target="_blank"
+              href="https://github.com/pro100-makari4/goit-markup-hw-06"
+              tabindex="-1"
+              >See project</a
+            >
+          </div>
+
+          <div class="project-image-wrapper">
+            <picture>
+              <source
+                srcset="/100_js_sweet-peppers-part-2/assets/prj-3-c0aef229.webp 1x, /100_js_sweet-peppers-part-2/assets/prj-3@2x-29f1a857.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source srcset="/100_js_sweet-peppers-part-2/assets/prj-3-b38b97af.webp 1x, /100_js_sweet-peppers-part-2/assets/prj-3@2x-d238c04e.webp 2x" />
+              <img
+                class="project-image"
+                src="/100_js_sweet-peppers-part-2/assets/prj-3-b38b97af.webp"
+                alt="Project preview"
+                width="614"
+                height="385"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
+      <div class="projects-swipe-btns-wrapper">
+        <button
+          class="prev-project-btn swiper-button-prev"
+          aria-label="previous project"
+        >
+          <svg class="prev-icon-btn" width="24" height="24">
+            <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-narrow-left"></use>
+          </svg>
+        </button>
+
+        <button
+          class="next-project-btn swiper-button-next"
+          aria-label="next project"
+        >
+          <svg class="next-icon-btn" width="24" height="24">
+            <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="faq" id="faq" aria-label="faq section">
+  <div class="container">
+    <h2 class="faq-title">FAQ</h2>
+    <ul class="faq-list accordion-container" aria-label="faq list">
+      <li class="faq-item ac" aria-label="question and answer">
+        <h3 class="faq-item-title ac-header ac-trigger" aria-label="title of question">
+          <span class="faq-item-title-text">
+            What programming languages are most often used in your
+            project?</span
+          >
+          <button class="faq-btn" type="button" aria-label="show more">
+            <svg class="faq-btn-icon" width="20" height="20">
+              <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-bottom"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq-item-text" aria-label="answer">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item ac" aria-label="question and answer">
+        <div><h3 class="faq-item-title ac-header ac-trigger" aria-label="title of question">
+          <span class="faq-item-title-text">
+            What are the deadlines for the project?</span
+          >
+          <button class="faq-btn" type="button" aria-label="show more">
+            <svg class="faq-btn-icon" width="20" height="20">
+              <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-bottom"></use>
+            </svg>
+          </button>
+        </h3></div>
+        <div class="ac-panel">
+          <p class="faq-item-text" aria-label="answer">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project
+          </p>
+        </div>
+      </li>
+      <li class="faq-item ac" aria-label="question and answer">
+        <h3 class="faq-item-title ac-header ac-trigger" aria-label="title of question">
+          <span class="faq-item-title-text">
+            What payment methods do you accept?</span
+          >
+          <button class="faq-btn" type="button" aria-label="show more">
+            <svg class="faq-btn-icon" width="20" height="20">
+              <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-bottom"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq-item-text" aria-label="answer">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item ac" aria-label="question and answer">
+        <h3 class="faq-item-title ac-header ac-trigger" aria-label="title of question">
+          <span class="faq-item-title-text">How can I contact you?</span>
+          <button class="faq-btn" type="button" aria-label="show more">
+            <svg class="faq-btn-icon" width="20" height="20">
+              <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-bottom"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq-item-text" aria-label="answer">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item ac" aria-label="question and answer">
+        <h3 class="faq-item-title ac-header ac-trigger" aria-label="title of question">
+          <span class="faq-item-title-text"
+            >Do you provide advice or support?</span
+          ><button class="faq-btn" type="button" aria-label="show more">
+            <svg class="faq-btn-icon" width="20" height="20">
+              <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-bottom"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq-item-text" aria-label="answer">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item ac" aria-label="question and answer">
+        <h3 class="faq-item-title ac-header ac-trigger" aria-label="title of question">
+          <span class="faq-item-title-text">
+            What does the process of developing a software product look like
+            from idea to implementation?</span
+          >
+          <button class="faq-btn" type="button" aria-label="show more">
+            <svg class="faq-btn-icon" width="20" height="20">
+              <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-bottom"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq-item-text" aria-label="answer">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="covers" aria-label="covers section">
+  <div class="container">
+    <h2 class="visually-hidden">Covers</h2>
+    <div class="content">
+      <div class="marquee">
+        <ul class="list-covers" aria-label="projects list">
+          <li class="list-element-covers animations" aria-label="project item">
+            <a
+              target="_blank"
+              class="marquee__line"
+              href="https://artemsv07.github.io/Justice-League-home/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-10-72c85230.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-10@2x-945410f0.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-10-85743463.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-10@2x-eba746fe.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-10-85743463.jpg"
+                  alt="Website - transforming your body"
+                />
+              </picture>
+            </a>
+
+            <a
+              target="_blank"
+              class="marquee__line"
+              href="https://artemsv07.github.io/ukrainian-traditional/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-7-1700baf3.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-7@2x-b249c8b0.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-7-3f03c521.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-7@2x-528d519d.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-7-3f03c521.jpg"
+                  alt="Website - Mimino"
+                />
+              </picture>
+            </a>
+
+            <a
+              target="_blank"
+              class="marquee__line display-adapt"
+              href="https://artemsv07.github.io/Justice-League-home/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-10-72c85230.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-10@2x-945410f0.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-10-85743463.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-10@2x-eba746fe.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-10-85743463.jpg"
+                  alt="Website - transforming your body"
+                />
+              </picture>
+            </a>
+          </li>
+
+          <li class="list-element-covers animations relet" aria-label="project item">
+            <a
+              target="_blank"
+              class="marquee__line"
+              href="https://artemsv07.github.io/ukrainian-traditional/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-11-c58af5ba.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-11@2x-680fdb32.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-11-4148ecee.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-11@2x-8aec6c6e.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-11-4148ecee.jpg"
+                  alt="Website - Manage you finances"
+                />
+              </picture>
+            </a>
+
+            <a
+              target="_blank"
+              class="marquee__line"
+              href="https://artemsv07.github.io/goit-markup-hw-06/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/first-screen-1-1c56fd42.jpg 1x, /100_js_sweet-peppers-part-2/assets/first-screen-1@2x-049d5614.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-first-screen-1-faddad9c.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-first-screen-1@2x-88b04757.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-first-screen-1-faddad9c.jpg"
+                  alt="Website - Turn your business"
+                />
+              </picture>
+            </a>
+            <a
+              target="_blank"
+              class="marquee__line"
+              href="https://artemsv07.github.io/ukrainian-traditional/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-8-2297bf08.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-8@2x-6ee312ba.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-8-b8633672.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-8@2x-475ecdb0.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-8-b8633672.jpg"
+                  alt="Website - Ukrainian-traditional-clothes"
+                />
+              </picture>
+            </a>
+
+            <a
+              target="_blank"
+              class="marquee__line display-adapt"
+              href="https://artemsv07.github.io/goit-markup-hw-06/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-11-c58af5ba.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-11@2x-680fdb32.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-11-4148ecee.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-11@2x-8aec6c6e.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-11-4148ecee.jpg"
+                  alt="Website - Manage you finances"
+                />
+              </picture>
+            </a>
+          </li>
+
+          <li class="list-element-covers animations" aria-label="project item">
+            <a
+              target="_blank"
+              class="marquee__line"
+              href="https://artemsv07.github.io/ukrainian-traditional/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-9-b381f0e3.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-9@2x-74011960.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-9-9ba79025.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-9@2x-7db2379b.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-9-9ba79025.jpg"
+                  alt="Website - Organic vegetables"
+                />
+              </picture>
+            </a>
+
+            <a
+              target="_blank"
+              class="marquee__line"
+              href="https://artemsv07.github.io/Justice-League-home/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-4-58e123d8.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-4@2x-55a6ec25.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-4-31d705f8.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-4@2x-1ace64d3.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-4-31d705f8.jpg"
+                  alt="Website - Gym"
+                />
+              </picture>
+            </a>
+
+            <a
+              target="_blank"
+              class="marquee__line"
+              href="https://artemsv07.github.io/ukrainian-traditional/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-5-cca7ab76.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-5@2x-4f8fd4d8.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-5-44c61373.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-5@2x-af1dedc5.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-5-44c61373.jpg"
+                  alt="Website - Fresh harvest box"
+                />
+              </picture>
+            </a>
+
+            <a
+              target="_blank"
+              class="marquee__line display-adapt"
+              href="https://artemsv07.github.io/Justice-League-home/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-9-b381f0e3.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-9@2x-74011960.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-9-9ba79025.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-9@2x-7db2379b.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-9-9ba79025.jpg"
+                  alt="Website - Organic vegetables"
+                />
+              </picture>
+            </a>
+          </li>
+
+          <li class="list-element-covers animations relet" aria-label="project item">
+            <a
+              target="_blank"
+              class="marquee__line"
+              href="https://artemsv07.github.io/ukrainian-traditional/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-12-3e819a25.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-12@2x-e0b2024e.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-12-2c5ced1d.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-12@2x-32697d5b.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-12-2c5ced1d.jpg"
+                  alt="Website - Learning English"
+                />
+              </picture>
+            </a>
+
+            <a
+              target="_blank"
+              class="marquee__line"
+              href="https://artemsv07.github.io/Justice-League-home/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-6-f19f0d48.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-6@2x-170b045d.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-6-28acdf84.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-6@2x-d5f936e9.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-6-28acdf84.jpg"
+                  alt="Website - Inspired by forms"
+                />
+              </picture>
+            </a>
+
+            <a
+              target="_blank"
+              class="marquee__line"
+              href="https://artemsv07.github.io/ukrainian-traditional/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-12-3e819a25.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-12@2x-e0b2024e.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-12-2c5ced1d.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-12@2x-32697d5b.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-12-2c5ced1d.jpg"
+                  alt="Website - Learning English"
+                />
+              </picture>
+            </a>
+
+            <a
+              target="_blank"
+              class="marquee__line display-adapt display-adapt-end"
+              href="https://artemsv07.github.io/goit-markup-hw-06/"
+            >
+              <picture>
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/rectangle-6-f19f0d48.jpg 1x, /100_js_sweet-peppers-part-2/assets/rectangle-6@2x-170b045d.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-6-28acdf84.jpg 1x, /100_js_sweet-peppers-part-2/assets/mobile-rectangle-6@2x-d5f936e9.jpg 2x"
+                />
+                <img
+                  class="gallery-items"
+                  src="/100_js_sweet-peppers-part-2/assets/mobile-rectangle-6-28acdf84.jpg"
+                  alt="Website - Inspired by forms"
+                />
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews" id="reviews" aria-label="reviews section">
+  <div class="container">
+    <h2 class="reviews-section-title">Reviews</h2>
+    <div class="reviews-swiper swiper">
+      <ul
+        class="reviews-list swiper-wrapper"
+        aria-label="reviews list"
+      ></ul>
+      <div class="reviews-swipe-btns-wrapper">
+        <button
+          class="prev-review-btn swiper-button-prev"
+          aria-label="previous review"
+        >
+          <svg class="prev-icon-btn" width="24" height="24">
+            <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-narrow-left"></use>
+          </svg>
+        </button>
+        <button
+          class="next-review-btn swiper-button-next"
+          aria-label="next review"
+        >
+          <svg class="next-icon-btn" width="24" height="24">
+            <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="work" id="footer" aria-label="order section">
+  <div class="container">
+    <h2 class="work-title">
+      <picture class="form-logo">
+        <source
+          srcset="data:image/webp;base64,UklGRvIDAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSLIAAAABcBRJktw0hGXggbJQBsIykRjIDGQGgjAQGsJC0H333xExAThspWMdH16jL4aLfRhfG35F5vhq+pnUjK9v0iGLUSDtgHGUSNtJHEVG2mpGmc2Gj0LzikoIwEepDoSWATaK/RQ1pVfThRpWNXX8e7mqqVQTXzW/oqaYGsOgJQDX4gCohACQlfgKrY4WmylUMG3BqIGGfaOCMBxN7fvahJPOdzHjQo/3DI6LrfRRn1bZFcNhVlA4IBoDAACQEACdASpQAFAAPp1KnUumLaomIpgM2LATiWUAy6gODZ4D9ZGSsLuo7ADek9w++4bo09gnmfzXexhl5tqmIqNf0tQc1KlSNVAXSWeUZQqSozCCatXgKU43RLsg09yb17lXDvvo724bDA4T678TfSCq8xsrNUFKfnVFGdOib/vCB3TuHoOw/jTmcCIGxgAA/vjACFiBWbPP2wOvXB/fcixTp06r+SndristyU5B2CDYcu5IGPF7+n+LWoX+lcSadjP1iWCSCjT+/NJDUPpK6oWCgAFjPxwc9j26qQPANnF3JADJUtXI1UMLThcga+HLgMr0Y9OdrdjmEYhszhzehpb8gSVXdxgAJcj1vtjZEXffPjhBOEXrSxxsuwIPT01QH5u03VtdsavvjJ+EM5Df6f67qfdtRbTYZHCyBpq+sckbflbffThKdaBVf5AF8Ooj34HoOLUpX6UWeJyJnLwNs2vMrCIer27nQZxOG+zxxuU7RY8pNOm5HcAoVHOx3iMVEd/RH+LF3eMd85l6lzTK/SAGQlpslYpdRUurPQw08ZVPU5OY7lKIcYTn+IMreJK6S3jBL9h0PDJ97zeN7jQw+aSJUNvnMEQ+FuJ6K00cFOU/bb25YS9KDQGH3KW1nAPrrR72Elx8y4F8E47/DupX7qK2Et8jp1fuzdozZFn1rv9+AbzCTKXGVxgzW3W9Upx/IZZS21PbD8DzgXQHHElhiXcuO1EFqr6tLtM7wzTS9ekSANeW46OJFv6ucjyiCQDTVYKGN8jXYmftZI22gTiDNLdi3hLIcwyT3rFZf9kG6Xz2jZnDJD6s8yFlhDulF+2l+GYD239MfbtQiPPidkAL1dvRjHIldQwhOcIwZOefegWgmghNdgRw7oMb9drJrV5Vs8Ml6p5XJMwnI//qV2HjdJ7hX3M53AKeNCIgk3YQuL8/4ymM5goS+LuLH58UPg/K25Q+/NbxHQEHmdhhMzmdA8nJmEjaDuGZ/G32ToLOS+eZQK+9Rf7yhVvQddYO32GTpIt0V2gfgA1zQAcwr5EhlzzJZN/domQOqwAAAA== , data:image/webp;base64,UklGRjoJAABXRUJQVlA4WAoAAAAQAAAAnwAAnwAAQUxQSGMBAAABkFZrb95ILwRBMIRCMIRACIMRg5hBwqTDQBAKQRAEQTOz+Z7x+3MbEROAK+Wh89M9/3R/2awVv1LUIvtpY7mZqGV3bbyRTJFd9qncQ6bIbvt0h+rZdR+ukjm7P8slxZNALxfUSApjOO0jadSTpiRyOuUjqdQThiSzHirBRpQD4kmny745CZ13DUlp3eOcuGxNSWrbKM5KyNqUtLY15yXknzGJ1X+MGQNQkloBRm4UMG4MSG5DKjn5UHZ0YWcxdj5f7LjTk2//v/3/9v//wDo7Ts/ryY4t7CzKjj7YqRLkAMaNAcrNCAg3BYAxYwCgzIz/SPDiWG28tDUJVrysobHSsCnOiWNn5WTYg4WRBbvF+XDZhxJsRMHRysaA48qF4szGRMO5yoPi7CE4iIrzizPgBVfK0r9FcPHgffOKGzbvVzTBLUvzPkUT3He0/pgK7l1G60iYCn5l1cVe/re5Pxd9CK4EAFZQOCCwBwAAcCoAnQEqoACgAD6dSJ5KqCojoylT6liwE4lnA8zOGZCPxL8rPyqZqcRtMbnbltOJWa9+r6Yxy35zfGWLB+3XsckUlIP1AQmMS6iw3Hpri1UBOqyWgMT3NFv/o6WnJTpqBEVmG5KIsGVOkGRhdzPGg5jUys76KSoEyHXg2Oq0KfygaREQTrqwY9lZ+XwYXcmr7GF9Z8kv8lI/iF74sQSkoaH5n/ZiNtWZQF9YKAJYuqRoXqKhzo58mexylAagQ5XfZ7Jw1PNjz0uuKYJ5yvDH4JErarkIyrBDHjUAofR8bs7Qz01yKZn/Gxn6XJkf9Leqeeb1a/1qwXR5p205jRdpMDsV2s4eyIpRWbaQjcLZnGYCI7KU84tE6fN37MgI/NfKt2tgpIrWE71uj5BJstwmWX5bEBEdZ6i+SW2/Z+abIOQLZihNZSGVDe3wr6oHBjMSbpJOrqeuDyFs6zygAP7r1H/9ux//bkP//bYhxVhFgAovv6/8YqmumBe6aIdcffg9v7VGLNtsCRdfuDpkuCzM/WX3WropuulaPdp+HPROS5v6HtmWp9Y3ejsADe3Dw8zI67gsKHbGc/owMUh/uMAsUT8QN515U6Z9DV6ofkPckuWCwoM5otnN2wY0m5n8/hsyLBiHW8Gryri5OiqV4tk5nQMHW6qXd4ROqvFpCqOr9QGxV26iKmYC0VwZnbruG+EgD1XuNaoD2m+7rvOF4zT78H5kwdFiVKQm4QuB9CpGikS/aggt1Lrm2XkC2khQhW3DJeIwlRG5EMOoCaAwB0X5ltG5XuVavMsLv2O3Dn89mH3qWkIQPnZ6cTzwB/PUHKMx5LGoiOqVYR96fsCWkWhtX2R+FHPdHLa0oA6ZXdJ2ro2Pzk+RZGubYM208lAIyvPUjeijYSXdaF68KexeOlpK68ahjgglMpJE3W+kqJ9S2IW57gELkzl3cECn8E+UFgfL9kLSp+ahTFBzk7ZiSzlkNpJlLwxE8xiC+865T4+G1Hiba2Ml9Egtf1JsG0gaiUtdKkzmsvBH8s3psL3Quh20g8oTo7WnkYE7RtV88dnF9ZXVzA3VLHJ/htIfCt+NL3VfBEtu93t7QjqVX50w/cIUHwMhQ7rBjjjUrfARWQ/hrD/rwRIIbHF5TwbAv9LvamMw2CoeaHVdYNGbQDZy2KuupF7JjdaY0+K0IwW6/BkAUhLCi6qmm5nFgo9RUc2XzQC7tT4/WhOMFOUfOVZsNqHH8XrSZh3ehEYqOtvWkvI0/74r5rAeSGvn0YZe3GBqfXcUPQTccOv3AD2sE6tvL1QWco+oH0QsfHkPhKwZjzd+pStXco6DAVGIHKO/v3KhQPf4ArwaoqfzwmBVWUlQu2GZ+6gCPNZNPVjWEVFabmYiYczo6+jbIxHoCoAwwbxYZmiBhgcIBBJ2Ulxzd2eIQhxd6A7PBNiv0f6Bknv/c0qyi2tTf+lYvchLO1oFoOD52ugovqTc+cOcxdrc9leGMxYBdKY3ur9tPXlXXMGvwn8AncUvk4/opiur++LKdX/492banqUPY0MDIAHmHwXy5Wu/l93K5KX3pudDSSV8F5r4EFSHVvqxKumiXbGRUwhatsCfWvGB134HXSBMHnm3DnzwGS0v3HwsFOJ0IoyRMxGudJhPMakZWXHJVAOKc1hJ9bkv3VYRR/S950Frg3OITEU+wkwL5He60PeHY9ETXPQoP5uEmFWPkfSmbzHP/qPQ1yohHE3vEMMVxwKbiqfm2u4OGCBKtHY0xhqBuer7LPHMB40j14QDCpX++GLmXFWh8oHPNWBqY4GiDIoMVQHlKcFjuXvJxppVdIWUUYLrf6+UhUvs7mRJ3s3E6UMzJn8/xItyb/Dprxq9nvEFVfLt0K5kZEb09ixeGnr5O8Cbga6yGvgCsxAozxx/NuM6T0WHmlz6f73ZJ6wGMSG7IjarvXQFjCoiug59ObhY5yJLn80mXZT8A+8sWfJRd/6VlMS9RIfHlnX2XDwKga+OzmlXXvn7H/KJ1KVCKTkMR302wDvBHOJ6pxmZco4KR8nFQBrVtEW/Hfsd7uVPU9nQ1P8+/eILCN49D5OXTsg3NGi1Z4x4pYkVIstXjRlP2quOicPkSmjUHY5KMJ5DpBQa7Y9fyIrGHllKasiZxFZURWVTHnhfoXeDp8qzb433iUvjGkZau8KBxZpJVQfd05vDocrWwtDcSwHgdyoNLP2v0Ung4CgN6G9Bshhuo1HVoWVvtLGFkTZnNTZl+/scdnYghjp2v1LElkF4HexnzR1sUXd82XbS2diMPFCbsisaHgzFDQC5Eb3hVRi/+Z4vXAigDlclg4rBF7qTP7qtdJGyRRBtqEiOnKUZhjncbBv0rfCUBqgq5XgAOETq6/NGsGUlSBRuSiCbznyoCvAcHo+2CjEjwGDVOZwGpmq2KsEjcYK/eI8K6dAJePVU0O5B8A+QWoNefXJf+pJe/BFEyQAxHbfRes0ZtovBLiIz0ERuRXAJUs24vaNQly4ASq9fAD6Mid3qJnu0QLwNo1oWh+Z/htrm3YYkbu06oGY6p1HhZtT95+zAN/b7afk5MCV1POXqZiAT160xyjr1OKTR2ro2kWNU4JiqzHtfTRzUkKYKSqkxpkr8AAAA 2x"
+          media="(min-width: 768px)"
+          width="77"
+          height="77"
+        />
+        <source
+          srcset="data:image/webp;base64,UklGRjYCAABXRUJQVlA4WAoAAAAQAAAAKwAAKwAAQUxQSI4AAAABZ2CQbeTgjeBmcG/0ERHRp4ydwk21bcty47ARwL4AFHGIwOoQgBC+/RH+DUZ3+1r99qxsEf2fACC/+dqQ+2ocr/nYiLO4Z2sj14GOFabgpmhgfop9fGqluaumcNcMPxrnp3HtX/yr2X80zlPTuGgqc03G/BT7OHdFA7qKNLCLVgcw7yhO3INZ/8K4vRgAVlA4IIIBAADQCACdASosACwAPp1In0waCInOAgAsBOJZQDC+mwJXa3G0qoXZUbyKZ7R+ObcIzyKj99ft7x4IUBEG0TDAbnSxXT5oKr6j44KWOUOp5YoAAP77pd7Mpwbn+RDTzor3fsANXPtvC2K3b8q8skftBtaOb0ZAwAL+BqkbWajajWcdCNGoFYdQ1zeomUwDYrAA4VdPr6E6FbWxjddIDhYRefIzrIg+h94z/iM43q3Nx10wpNuxeANSuFNeJiK4YIiFpTrTMl6QMqRXKtybsFUgNPZZ08Zfv7zZ09lqOITopA28Ycy9I4CBpVLOnbOKHIizpnt0T9LsOL1x8lTiNPZJ6z6EJCsaEjnt394E+kQ2VEPqGCBvpaauyb3f9yTxKhjc7OS21h6FI3pwww7oEshD8htih03Wr/KGdLQARX3RtV/rI/VhZG0DuUdJ49G4mGRtEPCJnIo9SP40R0l0h7Nbbs5C2GirBcTSNBM0x+YstoJqndzcenNBnyjhI/VAo2joNngAAA== , data:image/webp;base64,UklGRpQEAABXRUJQVlA4WAoAAAAQAAAAVwAAVwAAQUxQSOMAAAABgFXbbt3oQhAEQQqDionFoGGQMugwMARDEARBUN953f+JiAnAerHrPbKOHP1qir2l9TrpMN1DWtaZF92sZZ29baOjCIZucMmimNOqVjTbilZE209TUb38oMkl9VsU2fGlFV3/oMU35W0hVA5Ai3EKYJTKgcGpQ4u0GCubWc2d1V+wimKdtP4xnLSCVdxZ9ZnVbKxMWCk6pwE4JwMkKSkAZ7QAgCQhfYPzcXwebAJfNbmkfoNxmfCrM3H87jwca6fkkIb1GgyGYlM/XTq21tup0gU7qo2zdBfsrTb3OFTGfTbBegBWUDggigMAAPASAJ0BKlgAWAA+nUacSqYsJqMoE5xwsBOJZwDOWdtsao1i33NZV/d4EXEMX14xd74rODZ91/NhYCZPABHAtRCHsfqh32S/q9wydNMfIcAxTuhRlFRgcMycGjNVLrH7bdv+G00dGfOzj1Yt4n4pVUH89LFrbMaUzIxWUYA4E8pXr7cpm0BEU/2JwXIlHpSkTrBbWc59hCt4f3R4VfxWtAAA/vdOM8a403Qbqpf3+1fJGCi27JO0uWw5IjBQ++YbUdNaq71drQafgSuBTI5SkwcdFJj5/I96NyhdkEJtCaIX6Tq/qt2fHnWPMNoVpXuJ6RTqaveNrn6at++OWzRPBpmOYcUZocDo1z81ENqo9gBhsqMhLDROZMpg/3iTS05nkMK2suvmKg0E1pWBTMN87vBVimp0KDaEF7Myt9YqG5lzy1n5sd5eX9mYw6LVUaJMWx0vfhuOXmnl4ey+/lgchQJzqg2t5kMfmYJp1I+jE6MipYdSUbroobWWQrvULYx7tKoV/ebboMq36v58Hg5Me6b0EV/mxzGk6S/uax6OEnP3DU5EHQnLoRT3t8QQHOB09PRbTgsbbUTDXVtEeZGsXh5p9E4upCzzRnIuQhTjY06W1qjKYGDCsjvonW1++s5DQ9maQ3zr5PUaKU/b5Sj+Fk8afGDnIatetQrFQrOefZgXcMmODDGTWsaIERBJVdKp1D8YxX87m+vlCJVTykv9Jaj+gR8VEDh1dOn1mOObVBXjZWh9zfkMrCU3ZrJ88GpZA5AHCHvmmvcTx7nsrdykWdG+MtLdqD/PzGEtHv0KP3KVB5fU6pCKTXBL039cr1Zd9GC1GRUczPiRYvnd1W+tp5pb1gTlnA69038Va9IeCNcg63re+rS945dpPPxbX2IUrkqa8Nsr2++HqekpC35Ym7n9RjPPgol7rWY5Q99hkcb2HgzMdXGL8xY0yff84h5uAzIaQAOXj+xh+BYPZ5VZnHwpAeOyu3fzprqjh7kx7HiZ/9GS7Q7QvTX+gGJl8031I7Ax7ulTISXHHQTafAWBM+iSyE75t55FNfbbh7Zetrt7tL985Tw3JeqU+cFYA/QPKAqzR7zs+rwiSXqsWLTdvfbogHq2un1bjXc4LdRE5o4e1+HReUvsnzE7STXcf+YL1JyVO4Cc14v3SG5F09nuGcBdpFlqxS1dNQ15x4UKheNJonAgHn2qDrYAAA== 2x"
+          width="44"
+          height="44"
+        />
+        <img
+          src="data:image/webp;base64,UklGRjYCAABXRUJQVlA4WAoAAAAQAAAAKwAAKwAAQUxQSI4AAAABZ2CQbeTgjeBmcG/0ERHRp4ydwk21bcty47ARwL4AFHGIwOoQgBC+/RH+DUZ3+1r99qxsEf2fACC/+dqQ+2ocr/nYiLO4Z2sj14GOFabgpmhgfop9fGqluaumcNcMPxrnp3HtX/yr2X80zlPTuGgqc03G/BT7OHdFA7qKNLCLVgcw7yhO3INZ/8K4vRgAVlA4IIIBAADQCACdASosACwAPp1In0waCInOAgAsBOJZQDC+mwJXa3G0qoXZUbyKZ7R+ObcIzyKj99ft7x4IUBEG0TDAbnSxXT5oKr6j44KWOUOp5YoAAP77pd7Mpwbn+RDTzor3fsANXPtvC2K3b8q8skftBtaOb0ZAwAL+BqkbWajajWcdCNGoFYdQ1zeomUwDYrAA4VdPr6E6FbWxjddIDhYRefIzrIg+h94z/iM43q3Nx10wpNuxeANSuFNeJiK4YIiFpTrTMl6QMqRXKtybsFUgNPZZ08Zfv7zZ09lqOITopA28Ycy9I4CBpVLOnbOKHIizpnt0T9LsOL1x8lTiNPZJ6z6EJCsaEjnt394E+kQ2VEPqGCBvpaauyb3f9yTxKhjc7OS21h6FI3pwww7oEshD8htih03Wr/KGdLQARX3RtV/rI/VhZG0DuUdJ49G4mGRtEPCJnIo9SP40R0l0h7Nbbs5C2GirBcTSNBM0x+YstoJqndzcenNBnyjhI/VAo2joNngAAA=="
+          alt="Lloyd Jefferson photo"
+          width="44"
+          height="44"
+        />
+      </picture>
+      Let&#8216;s <span class="work-title-orange">work</span> together
+    </h2>
+
+    <form class="work-form" method="post" aria-label="order portfolio">
+      <div class="email-input-wrapper">
+        <input
+          type="email"
+          name="email"
+          class="work-form-input email"
+          autocomplete="off"
+          placeholder="clients@gmail.com"
+          aria-label="type your email"
+          novalidate
+          required
+          pattern="([A-z0-9_\.\-]{1,})@([A-z0-9_\.\-]{1,})\.([A-z]{2,8})"
+        />
+        <span
+          class="succes-text visually-hidden"
+          aria-label="Succesfull"
+          role="status"
+          >Succes!</span
+        >
+        <span
+          class="invalid-text visually-hidden"
+          aria-label="Try again"
+          role="status"
+          >Invalid email, try again</span
+        >
+      </div>
+      <input
+        type="text"
+        name="comment"
+        class="work-form-input comment"
+        placeholder="comments"
+        aria-label="type your comment"
+        autocomplete="off"
+        required
+      />
+      <button class="work-send-btn" type="submit" aria-label="send mail">
+        Send
+      </button>
+    </form>
+
+    <address class="work-contacts">
+      <a
+        class="contact-link"
+        href="mailto:lloydjefferson@gmail.com"
+        aria-label="my email link"
+        >lloydjefferson@gmail.com</a
+      >
+      <a
+        class="contact-link"
+        href="tel:+3801111111111"
+        aria-label="my telephone link"
+        >+380 11 1111 11 11</a
+      >
+    </address>
+  </div>
+
+  <div class="backdrop visually-hidden" role="alert" aria-label="Thanx for order"> 
+    <div class="modal">
+      <button
+        class="modal-close-btn"
+        type="button"
+        aria-label="close thanx window"
+      >
+        <svg class="close-icon" width="22" height="22">
+          <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h3 class="modal-title" aria-label="Thanx title"></h3>
+      <p class="modal-text" aria-label="Thanx text"></p>
+    </div>
+  </div>
+</footer>
+
+    <div class="overlay is-open-modal" id="modal" aria-label="modal menu" data-menu-modal> 
+  <div class="modal-container">
+    <div class="modal-icon-container">
+      <button class="button-reset" id="close-menu" type="button" aria-label="close window" data-menu-close-modal>
+        <svg class="header-btn-icon" width="36" height="36">
+          <use href="/100_js_sweet-peppers-part-2/assets/sprite-72f5c631.svg#icon-x-close"></use>
+        </svg>
+      </button>
+    </div>
+      <ul class="header-modal-menu-list" role="list" aria-label="go to section links" data-menu-close-list>
+        <li class="header-modal-menu-item header-text" role="listitem">
+          <a href="#about-me">About me</a>
+        </li>
+        <li class="header-modal-menu-item header-text" role="listitem">
+          <a href="#benefits">Benefits</a>
+        </li>
+        <li class="header-modal-menu-item header-text" role="listitem">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="header-modal-menu-item header-text" role="listitem">
+          <a href="#faq">FAQ</a>
+        </li>
+      </ul>
+      <a class="header-order-btn" href="#footer" role="link" data-menu-close-order>Order the project</a>
+  </div>
+</div>
+
+    
+  </body>
+</html>
