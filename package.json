@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/sweet-peppers-part-2/",
+    "build": "vite build --base=/100_js_sweet-peppers-part-2/",
     "preview": "vite preview"
   },
   "devDependencies": {
